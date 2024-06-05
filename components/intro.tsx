@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 
 export default function Intro() {
   return (
-    <div className="flex flex-row justify-center">
+    <section
+    className="scroll-mt-28"
+    id="home"
+    >
+      <div className="flex flex-row justify-center">
       <div className="flex flex-col h-[400px] w-[700px]">
         <motion.p 
         className="content-start text-[2rem] md:text-[3rem] text-center text-wrap text-gray-50"
@@ -14,7 +18,7 @@ export default function Intro() {
           Hi, I'm Bruno Welcome to My Portfolio!
         </motion.p>
         <motion.p 
-        className="text-[20rem] text-center"
+        className="text-[10rem] text-center"
         initial={{ y: -100, opacity: 0 }}
         animate={{
             rotate: [0, 60, 0],
@@ -26,5 +30,6 @@ export default function Intro() {
         </motion.p>
       </div>
     </div>
+    </section>
   );
 }
