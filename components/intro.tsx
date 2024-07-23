@@ -1,35 +1,49 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import bruno from "../public/bruno.png";
 
 export default function Intro() {
   return (
-    <section
-    className="scroll-mt-28"
-    id="home"
-    >
+    <section className="scroll-mt-28" id="home">
       <div className="flex flex-row justify-center">
-      <div className="flex flex-col h-[400px] w-[700px]">
-        <motion.p 
-        className="content-start text-[2rem] md:text-[3rem] text-center text-wrap text-gray-50"
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        >
-          Hi, I'm Bruno Welcome to My Portfolio!
-        </motion.p>
-        <motion.p 
-        className="text-[10rem] text-center"
-        initial={{ y: -100, opacity: 0 }}
-        animate={{
-            rotate: [0, 60, 0],
-            y: 0,
-            opacity: 1
-          }}
-        >
-        👋
-        </motion.p>
+        <div className="flex flex-col h-[400px] w-[700px]">
+          <motion.div
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            className="flex flex-row justify-center"
+          >
+            <Image
+              src={bruno}
+              alt={"picture of me"}
+              width={200}
+              height={200}
+              priority={true}
+              quality={95}
+              className="h-25 w-25 rounded-full border-white border-4 justify-self-center"
+            />
+          </motion.div>
+          <motion.p
+            className="content-start text-[2rem] md:text-[3rem] text-center text-wrap text-gray-50 pt-[75px]"
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+          >
+            Hi, I'm Bruno Welcome to My Portfolio!
+          </motion.p>
+          <motion.p
+            className="text-[10rem] text-center"
+            initial={{ y: -100, opacity: 0 }}
+            animate={{
+              rotate: [0, 60, 0],
+              y: 0,
+              opacity: 1,
+            }}
+          >
+            👋
+          </motion.p>
+        </div>
       </div>
-    </div>
     </section>
   );
 }
