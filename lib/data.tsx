@@ -29,7 +29,7 @@ export const projects = [
   {
     name: "Letterboxd Collage",
     description: "Developed web application that parses users letterboxd movie catalog and generates a collage of the last 9 movies watched",
-    tags: ["React, PapaParse, The Movie Database API, axios"],
+    tags: ["React", "PapaParse", "The Movie Database API", "axios"],
     imageUrl: letterboxd,
   }
 
