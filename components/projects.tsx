@@ -22,7 +22,7 @@ export default function Projects() {
         </motion.h1>
         <div>
           {projects.map((project, index) => (
-            <Project {...project} />
+            <Project key={index}{...project} />
           ))}
         </div>
       </div>
