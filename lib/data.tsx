@@ -1,6 +1,6 @@
 import React from "react";
 import letterboxd from "../public/letterboxd.png";
-import singlecell from "@/public/singlecell.png";
+import singlecell from "@/public/jupyter.png";
 import { FaUniversity } from "react-icons/fa";
 
 export const links = [
