@@ -14,7 +14,7 @@ export default function Projects() {
     >
       <div className="flex flex-col justify-center">
         <motion.h1
-          className="text-center pt-2 text-gray-50"
+          className="text-center pt-2 text-gray-50 text-3xl font-semibold"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
         >

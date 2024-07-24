@@ -14,17 +14,17 @@ export default function About() {
     
 
   return (
-    <section className="pt-[25rem] scroll-mt-1" id="about">
+    <section className="pt-[40rem] -scroll-mt-[32rem]" id="about">
       <div className="flex flex-row justify-center">
         <div className="flex flex-col items-center h-[400px] w-[700px]">
           <motion.h1 
-          className="text-center pt-2 text-gray-50"
+          className="text-center pt-2 text-gray-50 font-semibold text-3xl"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           >
             About Me
           </motion.h1>
-          <motion.p className="text-center text-wrap text-gray-50 text pt-3 text-size"
+          <motion.p className="text-center text-wrap text-gray-50 pt-3 text-lg leading-loose max-w-[50%] md:max-w-[42rem]"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           >
