@@ -41,7 +41,7 @@ export const projects = [
     imageUrl: singlecell,
   },
 
-] as const;
+];
 
 export const items = [
   {

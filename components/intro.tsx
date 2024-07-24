@@ -29,7 +29,7 @@ export default function Intro() {
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
           >
-            Hi, I'm Bruno Welcome to My Portfolio!
+            Hi, I&apos;m Bruno Welcome to My Portfolio!
           </motion.p>
           <motion.p
             className="text-[10rem] text-center"
