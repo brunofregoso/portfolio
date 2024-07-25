@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Projects() {
   return (
     <section
-      className="flex flex-row justify-center scroll-mt-28"
+      className="flex flex-row justify-center scroll-mt-28 mt-[28rem]"
       id="projects"
     >
       <div className="flex flex-col justify-center">
@@ -39,7 +39,7 @@ type ProjectProps = {
 
 function Project({ name, description, tags, imageUrl }: ProjectProps) {
   return (
-    <section className="mt-8 bg-cyan-900 max-w-[42rem] border border-black/5 overflow-hidden relative">
+    <section className="mt-8 bg-cyan-900 max-w-[20rem] md:max-w-[42rem] border border-black/5 overflow-hidden relative">
       <div className="px-4 py-4 sm:max-w-[50%]">
         <h3 className="text-white text-2xl font-semibold">{name}</h3>
         <p className="text-white mt-2 leading-relaxed">{description}</p>
@@ -55,7 +55,7 @@ function Project({ name, description, tags, imageUrl }: ProjectProps) {
         src={imageUrl}
         alt="Project image"
         quality={90}
-        className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl"
+        className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl hidden sm:block"
       />
     </section>
   );

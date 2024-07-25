@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="fixed top-[20px] left-0 right-0 flex justify-center">
+    <div className="fixed top-[20px] left-0 right-0 flex justify-center z-50">
       <motion.div
         className="flex gap-20 flex-row justify-center items-center rounded-full w-[400px] h-[40px] md:w-[600px] border-black bg-cyan-900 opacity-90"
         initial={{ y: -100, opacity: 0 }}
