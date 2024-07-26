@@ -21,7 +21,7 @@ export default function Intro() {
               height={200}
               priority={true}
               quality={95}
-              className="h-25 w-25 rounded-full border-white border-4 justify-self-center"
+              className="h-25 w-25 rounded-full border-white border-4 justify-self-center hidden"
             />
           </motion.div>
           <motion.p
@@ -32,7 +32,7 @@ export default function Intro() {
             Hi, I&apos;m Bruno Welcome to My Portfolio!
           </motion.p>
           <motion.p
-            className="text-[10rem] text-center"
+            className="text-[5rem] text-center"
             initial={{ y: -100, opacity: 0 }}
             animate={{
               rotate: [0, 60, 0],
