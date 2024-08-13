@@ -1,6 +1,7 @@
 import React from "react";
 import letterboxd from "../public/letterboxd.png";
 import singlecell from "@/public/jupyter.png";
+import randomgrub from "@/public/randomgrub.png";
 import { FaUniversity } from "react-icons/fa";
 
 export const links = [
@@ -40,6 +41,12 @@ export const projects = [
     tags: ["Jupyter", "Machine Learning", "NumPY", "Seaborn", "Python"],
     imageUrl: singlecell,
   },
+  {
+    name: "Random resturant finder",
+    description: "Web application utilizing the geolocation API to get user coordinates and google places API to get resturants. ",
+    tags: ["Javascript", "CSS", "HTML", "Google Maps API", "Geolocation API"],
+    imageUrl: randomgrub,
+  },
 
 ];
 
@@ -64,5 +71,12 @@ export const items = [
     subtitle: "Undergraduate Research Assistant",
     desc: "Worked Under Dr. Haiyun Hu at the Data Integration and Knowledge Discovery Lab, applying machine learning algorithms to cluster single celled RNA-sequences. Tasks included normalizing data, dimensionality reduction, and leidens clustering.",
     icon: React.createElement(FaUniversity),
-  }
+  },
+  {
+    date: "August 2024",
+    title: "Knight Hacks",
+    subtitle: "Hackathon Organizer",
+    desc: "Part of hackathon organizing team at University of Central Florida's annual hackathon, Knight Hacks. Tasks included organizing workshops, managing sponsors, and coordinating with other organizers.",
+    icon: React.createElement(FaUniversity),
+  },
 ];
