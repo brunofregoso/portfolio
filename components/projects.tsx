@@ -5,18 +5,19 @@ import { motion } from "framer-motion";
 import { projects } from "@/lib/data";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
+import Arrow from "@/components/Arrow";
 
 export default function Projects() {
   return (
     <section
-      className="flex flex-row justify-center scroll-mt-28 mt-[28rem]"
+      className="flex flex-row justify-center scroll-mt-28 mt-[32rem]"
       id="projects"
     >
       <div className="flex flex-col justify-center">
         <motion.h1
           className="text-center pt-2 text-gray-50 text-3xl font-semibold"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          /*initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}*/
         >
           Projects
         </motion.h1>
@@ -25,6 +26,9 @@ export default function Projects() {
             <Project key={index}{...project} />
           ))}
         </div>
+        <div className="pt-[70px]">
+            <Arrow />
+          </div>
       </div>
     </section>
   );

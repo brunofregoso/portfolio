@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import bruno from "../public/bruno.png";
+import Arrow from "./Arrow";
 
 export default function Intro() {
   return (
@@ -14,15 +14,6 @@ export default function Intro() {
             animate={{ y: 0, opacity: 1 }}
             className="flex flex-row justify-center"
           >
-            <Image
-              src={bruno}
-              alt={"picture of me"}
-              width={200}
-              height={200}
-              priority={true}
-              quality={95}
-              className="h-25 w-25 rounded-full border-white border-4 justify-self-center hidden"
-            />
           </motion.div>
           <motion.p
             className="content-start text-[2rem] md:text-[3rem] text-center text-wrap text-gray-50 pt-[75px]"
@@ -44,6 +35,7 @@ export default function Intro() {
           </motion.p>
         </div>
       </div>
+      <Arrow />
     </section>
   );
 }

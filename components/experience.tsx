@@ -7,6 +7,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { items } from "@/lib/data";
+import Arrow from "@/components/Arrow";
 
 export default function Experience() {
   return (
@@ -30,6 +31,9 @@ export default function Experience() {
           ))}
         </VerticalTimeline>
       </div>
+      <div className="pt-[70px]">
+            <Arrow />
+          </div>
     </section>
   );
 }
