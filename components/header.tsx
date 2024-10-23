@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <div className="fixed top-[20px] left-0 right-0 flex justify-center z-50 bg-transparent">
       <motion.div
-        className="flex gap-20 flex-row justify-center items-center rounded-full w-[400px] h-[40px] md:w-[600px] border-black bg-zinc-900 opacity-100 bg-transparent"
+        className="flex gap-20 flex-row justify-center items-center rounded-full w-[400px] h-[40px] md:w-[600px] bg-transparent"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
