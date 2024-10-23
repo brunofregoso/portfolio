@@ -17,7 +17,7 @@ export default function About() {
 
   return (
     <div>
-      <section className="pt-[32rem] -scroll-mt-[24rem]" id="about">
+      <section className="" id="about">
       <div className="flex flex-row justify-center">
         <div className="flex flex-col items-center h-[400px] w-[700px]">
           <motion.h1 

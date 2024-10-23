@@ -2,6 +2,7 @@ import React from "react";
 import letterboxd from "../public/letterboxd.png";
 import singlecell from "@/public/jupyter.png";
 import randomgrub from "@/public/randomgrub.png";
+import blnd from "@/public/blnd.png";
 import { FaUniversity } from "react-icons/fa";
 
 export const links = [
@@ -21,6 +22,12 @@ export const links = [
 ] as const;
 
 export const projects = [
+  {
+    name: "Blnd | All in one music playlist curator",
+    description: "Full stack applicaiion dedicated to allowing users to create accounts with thier sptoify accounts and combine playlists with friends, compare music stats with firends, and generate monthly playlists from their friends top listened tracks.",
+    tags: ["Typescript", "NextJS", "Supabase", "NodeJS", "Spotify API", "React", "LastFM API"],
+    imageUrl: blnd,
+  },
   {
     name: "Letterboxd Collage",
     description: "Developed web application that parses users letterboxd movie catalog and generates a collage of the last 9 movies watched",
