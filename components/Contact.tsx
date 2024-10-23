@@ -2,7 +2,8 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section className="flex justify-center mt-[28.25rem]" id="contact">
+    <div>
+      <section className="flex justify-center" id="contact">
       <div>
         <h1 className="text-center pt-2 text-gray-50 text-3xl font-semibold">
           Contact Me
@@ -28,5 +29,7 @@ export default function Contact() {
         </ul>
       </div>
     </section>
+    <p className="text-center text-2xl mt-14">Click anywhere to close!</p>
+    </div>
   );
 }

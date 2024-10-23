@@ -26,7 +26,7 @@ export default function RootLayout({
         ></link>
       </head>
       <body
-        className={`${inter.className} bg-sky-950 text-gray-950 h-[6000px] pt-[10rem]`}
+        className={`${inter.className} bg-zinc-900 text-gray-950 pt-[10rem]`}
       >
         <Header />
         {children}

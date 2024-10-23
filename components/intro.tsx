@@ -6,7 +6,7 @@ import Arrow from "./Arrow";
 
 export default function Intro() {
   return (
-    <section className="scroll-mt-28" id="home">
+    <section className="scroll-mt-28 z-10" id="home">
       <div className="flex flex-row justify-center">
         <div className="flex flex-col h-[400px] w-[700px]">
           <motion.div
@@ -35,7 +35,7 @@ export default function Intro() {
           </motion.p>
         </div>
       </div>
-      <Arrow />
+
     </section>
   );
 }
