@@ -11,13 +11,14 @@ import Arrow from "@/components/Arrow";
 
 export default function Experience() {
   return (
-    <section className="mt-[28.25rem]" id="experience">
+    <div>
+      <section className="" id="experience">
       <div>
         <VerticalTimeline>
           {items.map((item, index) => (
             <React.Fragment key={index}>
               <VerticalTimelineElement
-              contentStyle={{ background: 'rgb(22, 78, 99)', color: '#fff', boxShadow: "none"}}
+              contentStyle={{ background: '#f9fafb', color: '#18181b', boxShadow: "none"}}
               iconStyle={{background: 'rgb(255, 255, 255)', color: '#000000', boxShadow: "none"}}
               icon={item.icon}
               date={item.date}
@@ -31,9 +32,8 @@ export default function Experience() {
           ))}
         </VerticalTimeline>
       </div>
-      <div className="pt-[70px]">
-            <Arrow />
-          </div>
     </section>
+    <p className="text-center text-2xl mt-14">Click anywhere to close!</p>
+    </div>
   );
 }
