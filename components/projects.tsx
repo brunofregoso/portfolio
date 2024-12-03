@@ -29,7 +29,6 @@ export default function Projects() {
         </div>
       </div>
     </section>
-    <p className="text-center text-2xl mt-14">Click anywhere to close!</p>
     </div>
   );
 }

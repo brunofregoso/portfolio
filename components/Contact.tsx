@@ -29,7 +29,6 @@ export default function Contact() {
         </ul>
       </div>
     </section>
-    <p className="text-center text-2xl mt-14">Click anywhere to close!</p>
     </div>
   );
 }
