@@ -8,9 +8,7 @@ import Background from "@/components/background";
 export default function Home() {
   return (
     <main className="flex flex-col justify-center">
-      <Background />
-      <Intro />
-      <About />
+      <About/>
     </main>
   );
 }

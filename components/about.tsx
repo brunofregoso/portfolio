@@ -17,7 +17,7 @@ export default function About() {
 
   return (
     <div>
-      <section className="" id="about">
+      <section className="mt-[100vh]" id="about">
       <div className="flex flex-row justify-center">
         <div className="flex flex-col items-center h-[400px] w-[700px]">
           <motion.h1 
