@@ -28,6 +28,9 @@ export default function RootLayout({
       </head>
       <body
         className={`${inter.className} bg-zinc-900 text-gray-950 pt-[10rem]`}
+        style={{
+          cursor: "url(/wiicursor-60.png), auto",
+        }}
       >
         <Header />
         <Background />
