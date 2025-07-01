@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import Contact from "@/components/Contact";
 import Background from "@/components/background";
-
+import Home from "./page";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -27,13 +27,11 @@ export default function RootLayout({
         ></link>
       </head>
       <body
-        className={`${inter.className} bg-zinc-900 text-gray-950 pt-[10rem]`}
+        className={`${inter.className} bg-[#f8f8f8] text-gray-950 min-h-screen`}
         style={{
           cursor: "url(/wiicursor-60.png), auto",
         }}
       >
-        <Header />
-        <Background />
         {children}
       </body>
     </html>
