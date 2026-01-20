@@ -3,6 +3,8 @@ import letterboxd from "../public/letterboxd.png";
 import singlecell from "@/public/jupyter.png";
 import randomgrub from "@/public/randomgrub.png";
 import blnd from "@/public/blnd.png";
+import fitknights from "@/public/FitKnights.png"
+import password from "@/public/parallelpassword.png"
 import { FaUniversity } from "react-icons/fa";
 import { FaTerminal } from "react-icons/fa";
 import { GiMountedKnight } from "react-icons/gi";
@@ -26,16 +28,21 @@ export const links = [
 
 export const projects = [
   {
-    name: "Blnd | All in one music playlist curator",
-    description: "Full stack applicaiion dedicated to allowing users to create accounts with thier sptoify accounts and combine playlists with friends, compare music stats with firends, and generate monthly playlists from their friends top listened tracks.",
-    tags: ["Typescript", "NextJS", "Supabase", "NodeJS", "Spotify API", "React", "LastFM API"],
+    name: "Radioclub | All in one music playlist curator",
+    description: "Full stack application dedicated to allowing users to create accounts with thier sptoify accounts and combine playlists with friends, compare music stats with firends, and generate monthly playlists from their friends top listened tracks.",
+    tags: ["Typescript", "NextJS", "PostgreSQL", "Spotify API", "React", "LastFM API", "Golang", "Docker"],
     imageUrl: blnd,
   },
+  /*{
+    name: "Studyboards | ML powered document hub for students",
+    description: "Full stack application for students to share documents of all sorts of file formats in a pinterest style format. Utilizes message queues for document uploads, Neo4J to run similarity scores between different boards, and machine learning to prevent duplicate/unsafe uploads.",
+    tags: ["Typescript", "Golang", "Kafka", "MongoDB", "React", "Kubernetes"],
+  },*/
   {
-    name: "Letterboxd Collage",
-    description: "Developed web application that parses users letterboxd movie catalog and generates a collage of the last 9 movies watched",
-    tags: ["React", "PapaParse", "The Movie Database API", "axios"],
-    imageUrl: letterboxd,
+    name: "Parallel Password Cracker | C++ multithreaded brute force password cracker",
+    description: "A CLI program that utilizes worker threads to parallelize all possible combinations for a brute force attack. Used to conduct anaylysis on the effectiveness of password security on modern hardware",
+    tags: ["C++", "Python", "Jupyter"],
+    imageUrl: password
   },
   {
     name: "Single Cell RNA Clustering Notebook",
@@ -44,10 +51,10 @@ export const projects = [
     imageUrl: singlecell,
   },
   {
-    name: "Random resturant finder",
-    description: "Web application utilizing the geolocation API to get user coordinates and google places API to get resturants. ",
-    tags: ["Javascript", "CSS", "HTML", "Google Maps API", "Geolocation API"],
-    imageUrl: randomgrub,
+    name: "Fit Knights | Join or Create Fitness Challenges",
+    description: "Full stack application for users to create or join each other fitness challenges. Microservice to seed random fitness events of varying difficulty/points alongside community challenges. Leaderboard refreshes every week with top preformers. ",
+    tags: ["Python", "React", "Express.JS", "MongoDB", "Docker"],
+    imageUrl: fitknights,
   },
 
 ];
