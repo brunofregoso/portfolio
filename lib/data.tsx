@@ -4,6 +4,9 @@ import singlecell from "@/public/jupyter.png";
 import randomgrub from "@/public/randomgrub.png";
 import blnd from "@/public/blnd.png";
 import { FaUniversity } from "react-icons/fa";
+import { FaTerminal } from "react-icons/fa";
+import { GiMountedKnight } from "react-icons/gi";
+import { LiaChalkboardTeacherSolid } from "react-icons/lia";
 
 export const links = [
   {
@@ -62,20 +65,27 @@ export const items = [
     title: "PAPER",
     subtitle: "Spanish STEM tutor",
     desc: "Began working at PAPER education company, tutoring in both English and Spanish. Topics included are AP Computer Science A, AP Calculus BC, AP Physics C, and other K-12 mathmematics",
-    icon: React.createElement(FaUniversity),
+    icon: React.createElement(LiaChalkboardTeacherSolid),
   },
   {
     date: "February 2024",
     title: "University of Central Florida",
     subtitle: "Undergraduate Research Assistant",
     desc: "Worked Under Dr. Haiyun Hu at the Data Integration and Knowledge Discovery Lab, applying machine learning algorithms to cluster single celled RNA-sequences. Tasks included normalizing data, dimensionality reduction, and leidens clustering.",
-    icon: React.createElement(FaUniversity),
+    icon: React.createElement(GiMountedKnight),
   },
   {
     date: "August 2024",
     title: "Knight Hacks",
     subtitle: "Hackathon Organizer",
     desc: "Part of hackathon organizing team at University of Central Florida's annual hackathon, Knight Hacks. Tasks included organizing workshops, managing sponsors, and coordinating with other organizers.",
-    icon: React.createElement(FaUniversity),
+    icon: React.createElement(GiMountedKnight),
   },
+  {
+    date: "May 2025",
+    title: "Ubicquia",
+    subtitle: "Software Engineer Intern",
+    desc: "Full stack engineer at Ubicquia building companies IoT installation platform utilizing message queues, REST api, and a React frontend",
+    icon: React.createElement(FaTerminal)
+  }
 ];
