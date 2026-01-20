@@ -31,13 +31,10 @@ export default function About() {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           >
-            I am currently a second year student at the Unveristy of Central
-            Florida studying computer science. I hold a deep interest in web
-            developement as well as full stack developement. I have held
-            research positions, tutoring jobs, and am now seeking internship
-            opportunities. In my portfolio you will find some of past projects
-            and expeirences. Please feel free to reach out if you have any
-            questions!
+            I'm a senior at the University of Central Florida where I studied computer science! Im passionate about full stack engineering
+            and solving complex problems with software. I have experience as a full stack engineer building platforms to deploy IoT devices where I learned about
+            building complex time-efficient and fault tolerant systems. I'm seeking opportunities where I can make an impact on day one while collecting mentorship
+            from talented engineers.
           </motion.p>
         </div>
       </div>
