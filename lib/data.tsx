@@ -24,6 +24,10 @@ export const links = [
     name: "Contact",
     hash: "#contact",
   },
+  {
+    name: "Hobbies",
+    hash: "#hobbies",
+  },
 ] as const;
 
 export const projects = [
@@ -95,4 +99,15 @@ export const items = [
     desc: "Full stack engineer at Ubicquia building companies IoT installation platform utilizing message queues, REST api, and a React frontend",
     icon: React.createElement(FaTerminal)
   }
+];
+
+export const keyboards = [
+  {
+    name: "1up 60%",
+    details: ["Milky Gateron switches", "Acrylic case", "Polycarb plate"],
+  },
+  {
+    name: "Lain 40% Alice",
+    details: ["POM Mint Chocolate Chip switches", "Stacked acrylic case"],
+  },
 ];

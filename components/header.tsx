@@ -9,13 +9,15 @@ import Projects from "./projects";
 import About from "./about";
 import Experience from "./experience";
 import Contact from "./Contact";
+import Hobbies from "./hobbies";
 
-type LinkHash = "#projects" | "#experience" | "#contact";
+type LinkHash = "#projects" | "#experience" | "#contact" | "#hobbies";
 
 const componentMapping: {[key: string]: React.ReactNode} = {
   "#projects": <Projects />,
   "#experience": <Experience />,
   "#contact": <Contact />,
+  "#hobbies": <Hobbies />,
 }
 
 export default function Header() {
