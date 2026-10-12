@@ -31,9 +31,9 @@ export default function About() {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           >
-            I'm a senior at the University of Central Florida where I studied computer science! Im passionate about full stack engineering
+            I&apos;m a senior at the University of Central Florida where I studied computer science! Im passionate about full stack engineering
             and solving complex problems with software. I have experience as a full stack engineer building platforms to deploy IoT devices where I learned about
-            building complex time-efficient and fault tolerant systems. I'm seeking opportunities where I can make an impact on day one while collecting mentorship
+            building complex time-efficient and fault tolerant systems. I&apos;m seeking opportunities where I can make an impact on day one while collecting mentorship
             from talented engineers.
           </motion.p>
         </div>
