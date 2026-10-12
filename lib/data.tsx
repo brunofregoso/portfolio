@@ -67,7 +67,7 @@ export const items = [
   {
     date: "August 2022",
     title: "University of Central Florida",
-    subtitle: "B.S. Computer Science- 3.9 GPA",
+    subtitle: "B.S. Computer Science",
     desc: "Began my education studying computer science at the Univeristy of Central Florida",
     icon: React.createElement(FaUniversity),
   },
@@ -96,7 +96,14 @@ export const items = [
     date: "May 2025",
     title: "Ubicquia",
     subtitle: "Software Engineer Intern",
-    desc: "Full stack engineer at Ubicquia building companies IoT installation platform utilizing message queues, REST api, and a React frontend",
+    desc: "Full stack engineer at Ubicquia building the UbiHub installation platform utilizing MySQL + S3, RMQ message queues, APIs, React",
+    icon: React.createElement(FaTerminal)
+  },
+  {
+    date: "June 2026",
+    title: "Ubicquia",
+    subtitle: "Full Stack Engineer",
+    desc: "Continued full time, constructing webhook delivery systems for our smart-lighting maintenance solution to integrate with third party customers. Creating new feature for clients to utilize our SaaS for customer support integration, live insights on current maintenace + lighting history",
     icon: React.createElement(FaTerminal)
   }
 ];
