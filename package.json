@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
-    "@types/node": "^20",
+    "@types/node": "^24.19.2",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-vertical-timeline-component": "^3.3.6",
@@ -32,5 +32,8 @@
     "postcss": "^8",
     "tailwindcss": "^4.3.3",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": "24.x"
   }
 }
