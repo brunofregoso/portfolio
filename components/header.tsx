@@ -47,24 +47,24 @@ export default function Header() {
                 >
                   {link.name}
                 </Link>
-                <Backdrop
-                  sx={(theme) => ({
-                    backgroundColor: "#18181b",
-                    zIndex: theme.zIndex.drawer + 1,
-                  })}
-                  open={Boolean(open)}
-                  onClick={handleClose}
-                >
-                <div
-                className="max-w-[80%] max-h-[80%] overflow-y-auto hide-scr bg-zinc-900 p-4 rounded-lg"
-                >
-                  {open && componentMapping[open]}
-                </div>
-                </Backdrop>
               </li>
             ))}
           </ul>
         </nav>
+        <Backdrop
+          sx={(theme) => ({
+            backgroundColor: "#18181b",
+            zIndex: theme.zIndex.drawer + 1,
+          })}
+          open={Boolean(open)}
+          onClick={handleClose}
+        >
+          <div
+            className="max-w-[80%] max-h-[80%] overflow-y-auto hide-scr bg-zinc-900 p-4 rounded-lg"
+          >
+            {open && componentMapping[open]}
+          </div>
+        </Backdrop>
       </motion.div>
     </div>
   );

@@ -31,10 +31,9 @@ export default function About() {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           >
-            I&apos;m a senior at the University of Central Florida where I studied computer science! Im passionate about full stack engineering
-            and solving complex problems with software. I have experience as a full stack engineer building platforms to deploy IoT devices where I learned about
-            building complex time-efficient and fault tolerant systems. I&apos;m seeking opportunities where I can make an impact on day one while collecting mentorship
-            from talented engineers.
+            AI native Full-stack engineer working on building applications from 0 - 1 by designing data models, async jobs, API services, and UI solutions. 
+            Free time usually consists of rock climbing, rocket league, terraria, or basketball. I&apos;ll also tinker around with random projects such as my homelab,
+            keyboards (more here 👀), desktop, or whatever rabbit hole i&apos;ve found. 
           </motion.p>
         </div>
       </div>

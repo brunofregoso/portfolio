@@ -111,3 +111,6 @@ export const keyboards = [
     details: ["POM Mint Chocolate Chip switches", "Stacked acrylic case"],
   },
 ];
+
+// TODO: replace with this month's top 5 from the Last.fm API
+export const albums = [{ name: "Under construction", details: [] }];
