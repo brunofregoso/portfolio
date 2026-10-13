@@ -2,7 +2,7 @@
 // authenticate, and surface errors, but nothing about response shapes:
 // callers pass the expected type and the DTO layer maps it.
 //
-// Server-only: LASTFM_API_KEY has no NEXT_PUBLIC_ prefix, so importing this
+// Server-only: LAST_FM_API_KEY has no NEXT_PUBLIC_ prefix, so importing this
 // from a client component would send requests without a key.
 
 const BASE_URL = "https://ws.audioscrobbler.com/2.0/";
@@ -42,9 +42,9 @@ function isErrorBody(body: unknown): body is LastFmErrorBody {
 }
 
 function getApiKey(): string {
-  const key = process.env.LASTFM_API_KEY;
+  const key = process.env.LAST_FM_API_KEY;
   if (!key) {
-    throw new LastFmError("LASTFM_API_KEY is not set", 500);
+    throw new LastFmError("LAST_FM_API_KEY is not set", 500);
   }
   return key;
 }
