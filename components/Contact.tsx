@@ -12,7 +12,7 @@ const actions = [
   },
   {
     name: "Email",
-    href: "mailto:br199946@ucf.edu",
+    href: "mailto:brunofregosofrias@gmail.com",
     icon: <EnvelopeAlt />,
   },
   {
