@@ -1,9 +1,8 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { SpeedDial, SpeedDialAction, type FabProps } from "@mui/material";
-import { EnvelopeAlt, FileDetail } from "@boxicons/react";
+import { EnvelopeAlt, FileDetail, Github } from "@boxicons/react";
 
 const actions = [
   {
@@ -19,7 +18,7 @@ const actions = [
   {
     name: "GitHub",
     href: "https://github.com/brunofregoso",
-    icon: <Image src="/github.png" alt="" width={24} height={24} />,
+    icon: <Github />,
   },
 ];
 
