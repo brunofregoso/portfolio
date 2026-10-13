@@ -1,34 +1,78 @@
+"use client";
+
 import React from "react";
+import Image from "next/image";
+import { SpeedDial, SpeedDialAction, type FabProps } from "@mui/material";
+import { EnvelopeAlt, FileDetail } from "@boxicons/react";
+
+const actions = [
+  {
+    name: "Resume",
+    href: "/BrunoFregosoFriasResume.pdf",
+    icon: <FileDetail />,
+  },
+  {
+    name: "Email",
+    href: "mailto:br199946@ucf.edu",
+    icon: <EnvelopeAlt />,
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/brunofregoso",
+    icon: <Image src="/github.png" alt="" width={24} height={24} />,
+  },
+];
 
 export default function Contact() {
   return (
-    <div>
-      <section className="flex justify-center" id="contact">
-      <div>
-        <h1 className="text-center pt-2 text-gray-50 text-3xl font-semibold">
-          Contact Me
-        </h1>
-        <ul className="flex justify-center">
-          <li className="p-4">
-            <a
-              href="mailto:br199946@ucf.edu"
-              className="bg-gray-50 text-gray-950 px-4 py-2 rounded-lg"
-            >
-              Email
-            </a>
-          </li>
-          <li className="p-4">
-            <a
-              href="/BrunoFregosoFriasResume.pdf"
-              target="_blank"
-              className="bg-gray-50 text-gray-950 px-4 py-2 rounded-lg"
-            >
-              Resume
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    </div>
+    <SpeedDial
+      ariaLabel="Contact"
+      direction="down"
+      icon={<span>Contact</span>}
+      FabProps={{
+        disableRipple: true,
+        sx: {
+          width: "auto",
+          height: "auto",
+          minHeight: 0,
+          px: 0,
+          bgcolor: "transparent",
+          boxShadow: "none",
+          color: "inherit",
+          font: "inherit",
+          textTransform: "none",
+          transition: "color 150ms",
+          "&:hover, &:active": { bgcolor: "transparent", boxShadow: "none", color: "#f0f9ff" },
+        },
+      }}
+      sx={{
+        position: "relative",
+        // Overlay the actions so opening the dial doesn't shift the nav
+        "& .MuiSpeedDial-actions": {
+          position: "absolute",
+          top: "100%",
+          left: "50%",
+          transform: "translateX(-50%)",
+        },
+      }}
+    >
+      {actions.map((action) => {
+        const external = !action.href.startsWith("mailto:");
+        return (
+          <SpeedDialAction
+            key={action.name}
+            icon={action.icon}
+            tooltipTitle={action.name}
+            // Fab renders an <a> when given href; its types just don't list target/rel
+            FabProps={{
+              href: action.href,
+              target: external ? "_blank" : undefined,
+              rel: external ? "noopener noreferrer" : undefined,
+              "aria-label": action.name,
+            } as Partial<FabProps>}
+          />
+        );
+      })}
+    </SpeedDial>
   );
 }

@@ -10,7 +10,8 @@ import About from "./about";
 import Experience from "./experience";
 import Contact from "./Contact";
 
-type LinkHash = "#projects" | "#experience" | "#contact" | "#hobbies";
+// Contact opens its own speed dial, so it never opens the backdrop
+type LinkHash = "#projects" | "#experience" | "#hobbies";
 
 type HeaderProps = {
   // Rendered on the server so it can fetch from Last.fm
@@ -21,7 +22,6 @@ export default function Header({ hobbies }: HeaderProps) {
   const componentMapping: Record<LinkHash, React.ReactNode> = {
     "#projects": <Projects />,
     "#experience": <Experience />,
-    "#contact": <Contact />,
     "#hobbies": hobbies,
   };
   const [open, setOpen] = React.useState<LinkHash | null>(null);
@@ -40,7 +40,11 @@ export default function Header({ hobbies }: HeaderProps) {
       >
         <nav>
           <ul className="flex flex-row gap-6 md:gap-12 text-gray-50 text-sm opacity-100">
-            {links.map((link) => (
+            {links.map((link) => link.hash === "#contact" ? (
+              <li key={link.hash}>
+                <Contact />
+              </li>
+            ) : (
               <li key={link.hash}>
                 <Link
                   href={link.hash}
