@@ -119,5 +119,5 @@ export const keyboards = [
   },
 ];
 
-// TODO: replace with this month's top 5 from the Last.fm API
+// Shown when Last.fm is unavailable or returns no albums
 export const albums = [{ name: "Under construction", details: [] }];

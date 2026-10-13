@@ -1,11 +1,13 @@
 "use client";
 
 import React from "react";
-import { Card, CardContent, Typography } from "@mui/material";
+import { Card, CardContent, CardMedia, Link, Typography } from "@mui/material";
 
-type CarouselItem = {
+export type CarouselItem = {
   name: string;
   details: readonly string[];
+  imageUrl?: string | null;
+  href?: string;
 };
 
 type CardCarouselProps = {
@@ -74,9 +76,24 @@ export default function CardCarousel({ title, items }: CardCarouselProps) {
           "&:focus-visible": { outline: "2px solid #f9fafb", outlineOffset: 2 },
         }}
       >
+        {item.imageUrl && (
+          <CardMedia
+            component="img"
+            image={item.imageUrl}
+            alt={`Cover art for ${item.name}`}
+            draggable={false}
+            sx={{ aspectRatio: "1 / 1", objectFit: "cover" }}
+          />
+        )}
         <CardContent>
           <Typography variant="h5" component="h3" fontWeight={600}>
-            {item.name}
+            {item.href ? (
+              <Link href={item.href} target="_blank" rel="noopener noreferrer" color="inherit" underline="hover">
+                {item.name}
+              </Link>
+            ) : (
+              item.name
+            )}
           </Typography>
           {item.details.length > 0 && (
             <ul className="mt-2 list-disc pl-5">

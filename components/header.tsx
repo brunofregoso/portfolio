@@ -9,18 +9,21 @@ import Projects from "./projects";
 import About from "./about";
 import Experience from "./experience";
 import Contact from "./Contact";
-import Hobbies from "./hobbies";
 
 type LinkHash = "#projects" | "#experience" | "#contact" | "#hobbies";
 
-const componentMapping: {[key: string]: React.ReactNode} = {
-  "#projects": <Projects />,
-  "#experience": <Experience />,
-  "#contact": <Contact />,
-  "#hobbies": <Hobbies />,
-}
+type HeaderProps = {
+  // Rendered on the server so it can fetch from Last.fm
+  hobbies: React.ReactNode;
+};
 
-export default function Header() {
+export default function Header({ hobbies }: HeaderProps) {
+  const componentMapping: Record<LinkHash, React.ReactNode> = {
+    "#projects": <Projects />,
+    "#experience": <Experience />,
+    "#contact": <Contact />,
+    "#hobbies": hobbies,
+  };
   const [open, setOpen] = React.useState<LinkHash | null>(null);
   const handleOpen = (hash: LinkHash) => {
     setOpen(hash);

@@ -2,8 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
+import Hobbies from "@/components/hobbies";
 import Contact from "@/components/Contact";
 import Background from "@/components/background";
+
+// Re-render hourly so the Last.fm albums stay fresh, even after a failed fetch
+export const revalidate = 3600;
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,7 +33,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-zinc-900 text-gray-950 pt-[10rem]`}
       >
-        <Header />
+        <Header hobbies={<Hobbies />} />
         <Background />
         {children}
       </body>

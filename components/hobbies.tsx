@@ -1,8 +1,30 @@
 import React from "react";
-import CardCarousel from "./CardCarousel";
-import { albums, keyboards } from "@/lib/data";
+import CardCarousel, { type CarouselItem } from "./CardCarousel";
+import { albums as fallbackAlbums, keyboards } from "@/lib/data";
+import { getTopAlbums } from "@/lib/lastfm/albums";
+import type { TopAlbum } from "@/lib/lastfm/dto";
 
-export default function Hobbies() {
+function toCarouselItem(album: TopAlbum): CarouselItem {
+  return {
+    name: album.name,
+    details: [album.artist, `${album.playcount.toLocaleString("en-US")} plays`],
+    imageUrl: album.imageUrl,
+    href: album.url,
+  };
+}
+
+async function loadAlbums(): Promise<readonly CarouselItem[]> {
+  try {
+    const topAlbums = await getTopAlbums("1month", 5);
+    return topAlbums.length > 0 ? topAlbums.map(toCarouselItem) : fallbackAlbums;
+  } catch (err) {
+    console.error("Failed to load Last.fm top albums", err);
+    return fallbackAlbums;
+  }
+}
+
+export default async function Hobbies() {
+  const albums = await loadAlbums();
   return (
     <div>
       <section className="flex justify-center" id="hobbies">
