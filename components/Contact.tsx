@@ -2,7 +2,7 @@
 
 import React from "react";
 import { SpeedDial, SpeedDialAction, type FabProps } from "@mui/material";
-import { EnvelopeAlt, FileDetail, Github } from "@boxicons/react";
+import { EnvelopeAlt, FileDetail, Github, Linkedin } from "@boxicons/react";
 
 const actions = [
   {
@@ -19,6 +19,11 @@ const actions = [
     name: "GitHub",
     href: "https://github.com/brunofregoso",
     icon: <Github />,
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/brunofregosofrias",
+    icon: <Linkedin />,
   },
 ];
 
