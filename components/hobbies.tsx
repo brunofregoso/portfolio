@@ -15,7 +15,7 @@ function toCarouselItem(album: TopAlbum): CarouselItem {
 
 async function loadAlbums(): Promise<readonly CarouselItem[]> {
   try {
-    const topAlbums = await getTopAlbums("1month", 5);
+    const topAlbums = await getTopAlbums("12month", 5);
     return topAlbums.length > 0 ? topAlbums.map(toCarouselItem) : fallbackAlbums;
   } catch (err) {
     console.error("Failed to load Last.fm top albums", err);
@@ -33,7 +33,7 @@ export default async function Hobbies() {
             Hobbies
           </h1>
           <CardCarousel title="Keyboards I've built" items={keyboards} />
-          <CardCarousel title="Top 5 albums this month" items={albums} />
+          <CardCarousel title="Top 5 albums this year" items={albums} />
         </div>
       </section>
     </div>
