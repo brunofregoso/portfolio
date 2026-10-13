@@ -7,7 +7,7 @@ import { EnvelopeAlt, FileDetail, Github } from "@boxicons/react";
 const actions = [
   {
     name: "Resume",
-    href: "/BrunoFregosoFriasResume.pdf",
+    href: "https://www.dropbox.com/scl/fi/m8d0wiur0dg428sgihxrq/FregosoFriasBruno_Resume.pdf?rlkey=rumbfz3sifbt9isso6ltcg3p9&st=knw81fac&raw=1",
     icon: <FileDetail />,
   },
   {
